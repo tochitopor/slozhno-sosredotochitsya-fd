@@ -2,3 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --main-cover-image-link: url("../images/cover-image-dark.png");
+  --main-bc-color: rgb(6, 6, 82);
+}

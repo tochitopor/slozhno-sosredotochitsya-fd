@@ -2,9 +2,73 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-color: aquamarine;
+  background-image: var(--main-cover-image-link);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:  cover;
+  background-color: var(--main-bc-color);
+  background-attachment: fixed;
 }
 
 .header {
-  background-color: red;
+  height: 100vh;
+  min-height: 668px;
+  padding: 10px;
+  background-color:aqua;/**/
+  display:grid;
+  grid-template-rows: 1fr min-content 1fr;
+  outline: 5px solid red;/**/
+}
+
+/* .header::after {
+  content: "";
+  outline: 5px solid #2E9AFF;
+} */
+
+.header_decor {
+  position: absolute;
+  justify-self: end;
+  color: #FF0070;
+}
+
+.header_decor::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #FF0070;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header_title {
+  justify-self: start;
+  font-family: 'IBM Plex mono', sans-serif;/**/
+  font-weight: 700;
+  font-size: 116px;
+  letter-spacing: 0;
+  line-height: 82.5%;
+  color: #DB00FF;
+}
+
+.header_description {
+  justify-self: end;
+  align-self: center;
+}
+
+.title-decor {
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 23.4px;
+
+  color: #000028;
+  background-color: #FF0070;
+}
+
+.footer_title {
+  color: red;
 }
