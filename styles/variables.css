@@ -6,3 +6,7 @@
   --main-cover-image-link: url("../images/cover-image-dark.png");
   --main-bc-color: rgb(6, 6, 82);
 }
+
+:root {
+    --accent-color: #ff0070;
+}
