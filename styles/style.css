@@ -13,70 +13,88 @@
 .header {
   height: 100vh;
   min-height: 668px;
-  padding: 10px;/**/
+  padding: 10px;
   display:grid;
   grid-template-rows: 1fr min-content 1fr;
 }
 
-/* .header::after {
-  content: "";
-  outline: 5px solid #2E9AFF;
-} */
-
-.header_decor {
+.decorated-corners::before {
   position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
   justify-self: end;
-  color: #FF0070;
+  border-right: 1px solid #FF0070;
+  border-top: 1px solid #FF0070;
 }
 
-.header_decor::after {
-  content: "*";
+.decorated-corners::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  align-self: end;
+  border-left: 1px solid #FF0070;
+  border-bottom: 1px solid #FF0070;
+}
+
+.dark_header_decor {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  justify-self: end;
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  color: #FF0070;
+  letter-spacing: 0;
+  line-height: 25px;
+  color: #FF0070;
+  padding-right: 9px;
+}
+
+.dark_header_decor::after {
   width: 9px;
   height: 9px;
-  color: #FF0070;
+  display:block;
+  content: "";
+  align-self: center;
+  box-shadow: 0 0 5px 3px #FF0070;
+  border-radius: 50%;
+  background-color: #FF0070;
 }
 
 .header__theme-menu {
   justify-self: end;
   align-self: center;
-  margin-top: -4px;
-  margin-right: 8px;
 }
 
 .header__theme-menu-list {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 16px;
-}
-
-.header__theme-menu-item {
-    display: grid;
-    grid-template-rows: 1fr;
+  gap: 10px;  
 }
 
 .header__theme-menu-button {
-  justify-self: end;/**/
-  align-self: center;
+  width: 70px;
+  height: 26px;
   border: none;
   text-transform: lowercase;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
-  color: #FF0070;/**/
+  color: #FF0070;
   letter-spacing: 0;
-  line-height: 18px;/**/
-
+  line-height: 18px;
   background-color: transparent;
 }
 
 .header__theme-menu-button_active {
-   border-left: 1px solid green/*#FF0070;/**/
+   border: 1px solid #FF0070;
 }
 
 .header_title {
   justify-self: start;
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: 700;
-  /*font-size: 116px;/**/
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   text-shadow: 4px 4px 0 var(--accent-color);
   letter-spacing: 0;
