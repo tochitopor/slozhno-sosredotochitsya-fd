@@ -10,6 +10,8 @@
   background-attachment: fixed;
 }
 
+/*------------------------header------------------------*/
+
 .header {
   height: 100vh;
   min-height: 668px;
@@ -118,7 +120,44 @@
   background-color: #FF0070;
 }
 
+/*-------------------------main-------------------------*/
+.main {
+  min-height: 668px;
+  padding: 10px;
+}
+
+.main_gallery_store {
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  gap: 10px;
+}
+
+.picture {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* калище */
+  width: 355px;
+}
+
+/*------------------------footer------------------------*/
+
+.footer {
+  height: 100vh;
+  min-height: 668px;
+  padding: 10px;
+  display:grid;
+}
+
 .footer_title {
-  color: red;
-  background-color:aqua;/**/
+  justify-self: center;
+  align-self: center;
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  letter-spacing: 0;
+  line-height: 82.5%;
+  color: #DB00FF;
 }
