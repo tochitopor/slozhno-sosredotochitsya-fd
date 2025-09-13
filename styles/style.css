@@ -2,6 +2,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  display: grid;
+  gap: 40px;
   background-image: var(--main-cover-image-link);
   background-repeat: no-repeat;
   background-position: center;
@@ -47,6 +49,7 @@
   justify-self: end;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   color: #FF0070;
   letter-spacing: 0;
   line-height: 25px;
@@ -60,7 +63,7 @@
   display:block;
   content: "";
   align-self: center;
-  box-shadow: 0 0 5px 3px #FF0070;
+  box-shadow: 0 0 4px 4px #FF0070;
   border-radius: 50%;
   background-color: #FF0070;
 }
@@ -83,6 +86,7 @@
   text-transform: lowercase;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   color: #FF0070;
   letter-spacing: 0;
   line-height: 18px;
@@ -120,13 +124,18 @@
 }
 
 .list-title-decor {
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 /*-------------------------main-------------------------*/
 .main {
   min-height: 668px;
-  padding: 40px 10px 10px 10px;
+  padding: 0px 10px 0px 10px;
   display: grid;
   gap: 50px;
 }
@@ -153,12 +162,18 @@
 .aricle__text {
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 23.4px;
   color: #F1B2CE;
 }
 
-.main__gallery_store {
+.main__gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.main_gallery_store {
   display: grid;
   grid-template-rows: repeat(5, min-content);
   gap: 10px;
@@ -190,5 +205,5 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   letter-spacing: 0;
   line-height: 82.5%;
-  color: #DB00FF;
+  color: green; /*#DB00FF;*/
 }
