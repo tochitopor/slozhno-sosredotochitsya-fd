@@ -93,6 +93,18 @@
   background-color: transparent;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(var(--accent-color-rgba), 0.4);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid #FF0070;
+}
+
 .header__theme-menu-button_active {
    border: 1px solid #FF0070;
 }
@@ -130,6 +142,18 @@
 .link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.link:hover {
+  border-bottom: 1px solid #F1B2CE;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: 1px solid #F1B2CE;
 }
 
 /*-------------------------main-------------------------*/
