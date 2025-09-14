@@ -153,7 +153,6 @@
   color: #DB00FF;
 }
 
-
 .header_description {
   justify-self: end;
   align-self: center;
@@ -236,3 +235,21 @@
 }
 
 /*-------------------------media-------------------------*/
+@media (768px < width <=1024px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header_title {
+    margin-left: -20px;
+  }
+
+  .header_description {
+    min-height: 117px;
+    max-width: 364px;
+  }
+
+}
+@media (width >1024px) {
+
+}
