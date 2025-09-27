@@ -138,6 +138,7 @@
 
 .header__theme-menu-button_active {
    border: 1px solid var(--menu-color-focus);
+   pointer-events: none;
 }
 
 .header_title {
@@ -338,3 +339,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+} 

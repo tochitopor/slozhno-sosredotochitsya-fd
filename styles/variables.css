@@ -41,3 +41,25 @@
   --footer-title-color: #FFC2E6;
 
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+      --main-cover-image-link: url("../images/cover-image-light.png");
+      --main-bc-color: #FFF1F7;
+      --decor_visible: none;
+      --accent-color: #FF8DCB;
+      --accent-color-rgba: 53, 52, 48;
+      --corners-color: #353430;
+      --title-decor-color: #353430;
+      --title-decor-bc-color: #FF8DCB;
+      --link-hover-color: #353430;
+      --link-focus-color: #353430;
+      --menu-color: #353430;
+      --menu-color-tab: #353430;
+      --menu-color-focus: #353430;
+      --header-tittle-color: #FFC2E6;
+      --section-title-color: #353430;
+      --aricle-text-color: #353430;
+      --footer-title-color: #FFC2E6;
+  }
+}
