@@ -9,6 +9,23 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --main-cover-image-link: url("../images/cover-image-dark.png");
+  --main-bc-color: #000028;
+  --decor_visible: flex;
+  --accent-color: #FF0070;
+  --accent-color-rgba: 255, 0, 112;
+  --corners-color: #FF0070;
+  --title-decor-color: #000028;
+  --title-decor-bc-color: #FF0070;
+  --link-hover-color: #F1B2CE;
+  --link-focus-color: #F1B2CE;
+  --menu-color: #FF0070;
+  --menu-color-tab: #FF0070;
+  --menu-color-focus: #FF0070;
+  --header-tittle-color: #DB00FF;
+  --section-title-color: #FF0070;
+  --aricle-text-color: #F1B2CE;
+  --footer-title-color: #DB00FF;
 }
 
 .theme-dark .page {

@@ -77,7 +77,7 @@
 
 .dark_header_decor {
   position: absolute;
-  display: var(--decor_visible, flex);
+  display: var(--decor_visible);
   gap: 10px;
   justify-self: end;
   font-family: 'IBM Plex mono', sans-serif;
@@ -107,7 +107,7 @@
 
 .header__theme-menu-list {
   display: grid;
-  gap: 10px;  
+  gap: 10px;
 }
 
 .header__theme-menu-button {
