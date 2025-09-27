@@ -43,7 +43,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root.theme-auto {
       --main-cover-image-link: url("../images/cover-image-light.png");
       --main-bc-color: #FFF1F7;
       --decor_visible: none;
